@@ -52,5 +52,5 @@ fi
 # Xóa container cũ, build và run container mới
 docker rm -f eureka-server-container
 docker build -t eureka-server-image .
-docker run -p8761:8761 --name eureka-server-container eureka-server-image
+docker run -d -p 8761:8761 --name eureka-server-container --network root_my_network eureka-server-image
 EOF
