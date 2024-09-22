@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: eureka_server
+  cloud:
+    gateway:
+      httpclient:
+        max-header-size: 65536
+
+server:
+  port: 8761
+  http2:
+    enabled: true
+  ssl:
+    key-store: keystore.p12
+    key-store-password: hoangsang236
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+  max-http-request-header-size: 65536
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    nonSecurePortEnabled: false
+    securePortEnabled: true
+    securePort: 8761
