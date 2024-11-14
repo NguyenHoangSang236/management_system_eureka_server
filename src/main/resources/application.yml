@@ -11,10 +11,10 @@ server:
   http2:
     enabled: true
   ssl:
-    key-store: keystore.p12
-    key-store-password: hoangsang236
-    keyStoreType: PKCS12
-    keyAlias: tomcat
+    key-store: ${SSL_FILE_DIRECTORY}
+    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+    keyStoreType: ${SSL_KEYSTORE_TYPE}
+    keyAlias: ${SSL_KEYSTORE_ALIAS}
   max-http-request-header-size: 65536
 
 eureka:
