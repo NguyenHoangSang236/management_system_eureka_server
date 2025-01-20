@@ -6,16 +6,17 @@ spring:
       httpclient:
         max-header-size: 65536
 
-server:
-  port: 8761
-  http2:
-    enabled: true
-  ssl:
-    key-store: ${SSL_FILE_DIRECTORY}
-    key-store-password: ${SSL_KEYSTORE_PASSWORD}
-    keyStoreType: ${SSL_KEYSTORE_TYPE}
-    keyAlias: ${SSL_KEYSTORE_ALIAS}
-  max-http-request-header-size: 65536
+#server:
+#  port: 8761
+#  host: localhost
+#  http2:
+#    enabled: true
+#  ssl:
+#    key-store: ${SSL_FILE_DIRECTORY}
+#    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+#    keyStoreType: ${SSL_KEYSTORE_TYPE}
+#    keyAlias: ${SSL_KEYSTORE_ALIAS}
+#  max-http-request-header-size: 65536
 
 eureka:
   client:
